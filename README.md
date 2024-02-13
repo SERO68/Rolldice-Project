@@ -1,4 +1,4 @@
-# diceroll
+# Diceroll Project
 
 A new Flutter project.
 
