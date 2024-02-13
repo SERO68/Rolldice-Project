@@ -115,7 +115,7 @@ class _ShuffelState extends State<Shuffel3> {
           ),
         ]),
         const SizedBox(
-          height: 10,
+          height: 100,
         ),
         ElevatedButton(
           onPressed: rolldice,
