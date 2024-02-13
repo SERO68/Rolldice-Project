@@ -77,6 +77,7 @@ class _ShuffelState extends State<Shuffel2> {
               width: 130,
             ),
           ),
+          const SizedBox(height: 10),
           TextButton(
             onPressed: clickedimage2,
             child: Image(
@@ -86,7 +87,7 @@ class _ShuffelState extends State<Shuffel2> {
           ),
         ]),
         const SizedBox(
-          height: 90,
+          height: 100,
         ),
         ElevatedButton(
           onPressed: rolldice,

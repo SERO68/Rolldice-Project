@@ -103,6 +103,8 @@ class _ShuffelState extends State<Shuffel3> {
             ),
           ),
         ]),
+        const SizedBox(height: 10),
+
         Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           TextButton(
             onPressed: clickedimage3,
@@ -113,7 +115,7 @@ class _ShuffelState extends State<Shuffel3> {
           ),
         ]),
         const SizedBox(
-          height: 90,
+          height: 10,
         ),
         ElevatedButton(
           onPressed: rolldice,

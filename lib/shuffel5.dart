@@ -137,6 +137,8 @@ class _ShuffelState extends State<Shuffel5> {
             ),
           ),
         ]),
+                  const SizedBox(height: 10),
+
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -152,6 +154,8 @@ class _ShuffelState extends State<Shuffel5> {
             ),
           ],
         ),
+                  const SizedBox(height: 10),
+
         Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           TextButton(
             onPressed: clickedimage3,
@@ -171,6 +175,7 @@ class _ShuffelState extends State<Shuffel5> {
         const SizedBox(
           height: 20,
         ),
+        
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

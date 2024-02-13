@@ -164,6 +164,8 @@ class _ShuffelState extends State<Shuffel6> {
                           ),
                         ),
                       ]),
+                                const SizedBox(height: 10),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -183,6 +185,8 @@ class _ShuffelState extends State<Shuffel6> {
                       ),
                     ],
                   ),
+                            const SizedBox(height: 10),
+
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
