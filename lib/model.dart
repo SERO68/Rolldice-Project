@@ -12,7 +12,8 @@ import 'shuffel5.dart';
 import 'shuffel6.dart';
 
 class Model extends ChangeNotifier {
-  Center _one = const Center(
+
+  Center _mainShuffel = const Center(
     child: Shuffel4(),
   );
 
@@ -40,41 +41,41 @@ class Model extends ChangeNotifier {
     child: Shuffel6(),
   );
 
-  Center get one => _one;
+  Center get shuffelcenter => _mainShuffel;
 
   void changeDice1() {
     Center newCenter = center1;
-    _one = newCenter;
+    _mainShuffel = newCenter;
     notifyListeners();
   }
 
   void changeDice2() {
     Center newCenter = center2;
-    _one = newCenter;
+    _mainShuffel = newCenter;
     notifyListeners();
   }
 
   void changeDice3() {
     Center newCenter = center3;
-    _one = newCenter;
+    _mainShuffel = newCenter;
     notifyListeners();
   }
 
   void changeDice4() {
     Center newCenter = center4;
-    _one = newCenter;
+    _mainShuffel = newCenter;
     notifyListeners();
   }
 
   void changeDice5() {
     Center newCenter = center5;
-    _one = newCenter;
+    _mainShuffel = newCenter;
     notifyListeners();
   }
 
   void changeDice6() {
     Center newCenter = center6;
-    _one = newCenter;
+    _mainShuffel = newCenter;
     notifyListeners();
   }
 
@@ -180,18 +181,13 @@ class Model extends ChangeNotifier {
     end: Alignment.bottomRight,
     colors: [Color.fromRGBO(0, 69, 142, 1), Color.fromRGBO(0, 3, 40, 1)],
   );
-  Gradient gradient4 = const RadialGradient(
-    colors: [
-      Color.fromRGBO(192, 26, 26, 0.888),
-      Color.fromRGBO(131, 17, 17, 0.875)
-    ],
-  );
-  Gradient gradient5 = const LinearGradient(
+
+  Gradient gradient4 = const LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     colors: [Color.fromRGBO(234, 152, 218, 1), Color.fromRGBO(91, 108, 249, 1)],
   );
-  Gradient gradient6 = const LinearGradient(
+  Gradient gradient5 = const LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     colors: [
@@ -228,7 +224,6 @@ class Model extends ChangeNotifier {
 
   void changeGradient4() {
     Gradient newGradient = gradient4;
-
     log('$gradient');
 
     _gradient = newGradient;
@@ -237,14 +232,6 @@ class Model extends ChangeNotifier {
 
   void changeGradient5() {
     Gradient newGradient = gradient5;
-    log('$gradient');
-
-    _gradient = newGradient;
-    notifyListeners();
-  }
-
-  void changeGradient6() {
-    Gradient newGradient = gradient6;
     log('$gradient');
 
     _gradient = newGradient;

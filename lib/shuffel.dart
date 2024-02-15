@@ -11,13 +11,13 @@ class Shuffel extends StatefulWidget {
 }
 
 class _ShuffelState extends State<Shuffel> {
+
   var activedice1 = 1;
-
   String name1 = 'dice';
-
   bool imagechange1 = false;
 
   var sum = 0;
+  
   void clickedimage1() {
     setState(() {
       if (imagechange1 == false) {

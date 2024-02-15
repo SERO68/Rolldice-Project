@@ -52,7 +52,7 @@ class _ThirdscreenState extends State<Thirdscreen> {
                         )),
                   ],
                 ),
-                model.one,
+                model.shuffelcenter,
               ]),
             ),
           ),

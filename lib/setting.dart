@@ -87,8 +87,8 @@ class _SettingsState extends State<Settings> {
                         Customebutton2(model.changeGradient1, model.gradient1),
                         Customebutton2(model.changeGradient2, model.gradient2),
                         Customebutton2(model.changeGradient3, model.gradient3),
+                        Customebutton2(model.changeGradient4, model.gradient4),
                         Customebutton2(model.changeGradient5, model.gradient5),
-                        Customebutton2(model.changeGradient6, model.gradient6),
                       ],
                     ),
                     const SizedBox(
@@ -162,12 +162,12 @@ class Customebutton3 extends StatefulWidget {
   const Customebutton3(
     this.changeColor,
     this.num,
-    this.change,
+    this.changedice,
     this.text, {
     super.key,
   });
   final String text;
-  final void Function() change;
+  final void Function() changedice;
   final int num;
   final void Function() changeColor;
 
@@ -189,7 +189,7 @@ class _Customebutton3State extends State<Customebutton3> {
               ),
               fixedSize: const MaterialStatePropertyAll(Size(85, 20))),
           onPressed: () {
-            widget.change();
+            widget.changedice();
             widget.changeColor();
           },
           child: Text(
@@ -208,13 +208,13 @@ class _Customebutton3State extends State<Customebutton3> {
 
 class Customebutton2 extends StatelessWidget {
   const Customebutton2(
-    this.change,
-    this.gradientchange, {
+    this.changegradiant,
+    this.gradientOfModel, {
     super.key,
   });
 
-  final Gradient gradientchange;
-  final void Function() change;
+  final Gradient gradientOfModel;
+  final void Function() changegradiant;
 
   @override
   Widget build(BuildContext context) {
@@ -228,14 +228,14 @@ class Customebutton2 extends StatelessWidget {
           ),
           onPressed: () {
             log('click');
-            change();
+            changegradiant();
           },
           child: Container(
               width: 60,
               height: 60,
               decoration: BoxDecoration(
                 borderRadius: const BorderRadius.all(Radius.circular(10)),
-                gradient: gradientchange,
+                gradient: gradientOfModel,
                 border: Border.all(
                   color: Colors.white,
                   width: 2.0,
@@ -247,4 +247,3 @@ class Customebutton2 extends StatelessWidget {
   }
 }
 
-void hello() {}
